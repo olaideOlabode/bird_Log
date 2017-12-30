@@ -1,0 +1,97 @@
+.padding_10px{
+    margin:4px;
+    padding:0px;
+    min-height: 35px;
+    min-width: 20px;
+}
+.padding_0px{
+    margin:0px;
+    
+}
+.left_panel{
+    margin-right:2px;
+}
+
+.right_panel{
+    margin-left:2px;
+}
+input{max-width: 100%}
+
+
+input:checked + span{
+    font-weight: bold;
+    color:red;
+}
+.my_overflow{
+    white-space: nowrap;
+    overflow-x:hidden;
+    
+}
+.btn-md{
+    min-width:43px;
+}
+.rec_header{
+    align-self: center
+}
+input[type=number]{
+    height:100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 20%;
+    min-width: 80px;
+    
+}
+input[type=date],input[type=number],input[type=text]{
+    background-color:inherit;
+    border-color:black;
+    border-radius:10%;
+    width:100%;
+    
+    
+        
+}
+/*START:Removing Spinners on number input types*/
+/* For Firefox */
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+/* Webkit browsers like Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/*END:Removing Spinners on number input types*/
+/*
+To hide the Radio button and use text instead, look at this link 
+for info and read comments about why this approach used here may not be the best
+https://stackoverflow.com/questions/17541614/use-images-instead-of-radio-buttons
+
+.my_overflow{
+    white-space: nowrap;
+    overflow: hidden;
+    height:35px
+}
+.my_radio > input{
+    visibility:hidden;
+    position:absolute;
+}
+
+.my_radio > input + span{
+    cursor:pointer;
+    margin-right:10px;
+    padding:2px;
+}
+.my_radio > input:checked + span{
+    border:2px solid blue;
+    border-radius: 50%;
+}*/
+/*
+html{
+    height: 100%;
+    background:black;
+}
+body{height:100%}
+.container{height:100%}
+form{height:100%}*/

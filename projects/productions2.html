@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Production Record</title>
+    </head>
+    <body>
+        <form action="" method="post">
+            <div>
+                <div>Date: </div>
+                <div><input type='date' name='date' value=''></div>
+            </div>
+            
+            <div>
+                <label for ="houseID" title="The house ID can be generated from the setup stage using javascript">House ID:</label>
+                <select name="houseID" id="houseID" required>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <span title="For free range birds, there is no need for being able to use the cage numbers therefore it has been disabled.">Cage:</span>
+                <input type='button' name='left' value='<' disabled>
+                <input type='button' name='1' value='1' disabled>
+                <input type='button' name='2' value='2' disabled>
+                <input type='button' name='3' value='3' disabled>
+                <input type='button' name='4' value='4' disabled>
+                <input type='button' name='5' value='5' disabled>
+                <input type='button' name='6' value='>' disabled>
+
+            </div>
+            <br>
+            <div title="These records represent a template of what the page needs to make entries for the number of eggs collected from each cage and number of birds in each of these cages. We can consider using javascript to generate the layout.">
+                <div>
+                    <div>Eggs</div>
+                    <div>Birds</div>
+                </div>
+                <div>
+                    <div>
+                       <input type='number' name='free_range_eggs' class='numEntry' value=0 min=0 max=20>
+                    </div>
+                    <div>
+                       <input type='number' name='free_range_birds' class='numEntry' value=0 min=0 max=20>
+                    </div>
+                </div>
+                
+                
+                <div>
+                    <input type='submit' name='back' value='Back' title='I declared it as a submit button because I will like to save the changes made when the user wants to check a previous entry'>
+                    <input type='submit' name='next' value='Next' title='when going to the next data to record,     submit this entry before moving on to the next'>
+                </div>
+                
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Production Record</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="/Bootstrap4/conFusion/node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel='stylesheet' href='css/styles.css'><!--<-->
+    </head>
+    <body>
+        <form action="#" method="post">
+            <div class='container'>
+                <div class='row'>
+                <div class='col offset-1 padding_2px'>Date: </div>
+                <div class='padding_2px col-8'><input type='date' name='date' value=''></div>
+            </div>
+            <div class='row'>
+                <div class='col offset-1 padding_2px' >
+                    <label for ="houseID" title="The house ID can be generated from the setup stage using javascript" >House ID:</label>
+                </div>
+                <div class='col-8 padding_2px'>
+                <select name="houseID" id="houseID" required>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col offset-1 padding_2px'>
+                    <span title="The idea is for these numbers to vary from 1 to number of cages in the House ID. The arrows are to be used to scroll left or right to display more numbers that the width of the mobile phone cannot display. We can change this later to a different system if we find a better approach">Column:</span>
+                
+                </div>
+                <div class='col-8 padding_2px'>
+                    
+                    <input type='button' name='left' value='<'>
+                    <input type='button' name='left' value='1'>
+                    <input type='button' name='left' value='2'>
+                    <input type='button' name='left' value='3'>
+                    <input type='button' name='left' value='4'>
+                    <input type='button' name='right' value='>'>
+
+                </div>
+            </div>
+            
+            </div>
+            <div class='container' ><!--style='width:350px'-->
+            <!--<div title="These records represent a template of what the page needs to make entries for the number of eggs collected from each cage and number of birds in each of these cages. We can consider using javascript to generate the layout." class=''>-->
+                <div class='row record_header align-items-end' style='min-height: 45px'>
+                    <div class='col-1 offset-4 padding_2px'>Eggs</div>
+                    <div class='col-1 offset-2 padding_2px'>Birds</div>
+                </div>
+                <div class='row cage'>
+
+                    <div class='col-2 offset-1 padding_2px'>
+                        <input type='button' name='plus' value='+' class='plus_minus' id='eggs_plusA'><br>
+                        <input type='button' name='plus' value='-' class='plus_minus' id='eggs_minusA'>
+                    </div>
+                    <div class='col-3 padding_2px'>
+                        <input type='number' name='A_eggs' class='numEntry ' value=0 min=0 max=5>
+                    </div>
+                    <div class='col-3 padding_2px'>
+                        <input type='number' name='A_birds' class='numEntry' value=0  min=0 max=5>
+                    </div>
+                    <div class='col-2 padding_2px'>
+                        <input type='button' name='plus' value='+' class='plus_minus' id='birds_plusA'><br>
+                        <input type='button' name='plus' value='-' class='plus_minus' id='birds_minusA'>
+                    </div>
+                    
+                </div>
+                <div class='row cage'>
+
+                    <div class='col-2 offset-1 padding_2px'>
+                        <input type='button' name='plus' value='+' class='plus_minus' id='eggs_plusB'><br>
+                        <input type='button' name='plus' value='-' class='plus_minus' id='eggs_minusB'>
+                    </div>
+                    <div class='col-3 padding_2px'>
+                        <input type='number' name='B_eggs' class='numEntry ' value=0 min=0 max=5>
+                    </div>
+                    <div class='col-3 padding_2px'>
+                        <input type='number' name='B_birds' class='numEntry' value=0  min=0 max=5>
+                    </div>
+                    <div class='col-2 padding_2px'>
+                        <input type='button' name='plus' value='+' class='plus_minus' id='birds_plusB'><br>
+                        <input type='button' name='plus' value='-' class='plus_minus' id='birds_minusB'>
+                    </div>
+                    
+                </div>
+
+                <div class='row cage'>
+
+                    <div class='col-2 offset-1 padding_2px'>
+                        <input type='button' name='plus' value='+' class='plus_minus' id='eggs_plusC'><br>
+                        <input type='button' name='plus' value='-' class='plus_minus' id='eggs_minusC'>
+                    </div>
+                    <div class='col-3 padding_2px'>
+                        <input type='number' name='C_eggs' class='numEntry ' value=0 min=0 max=5>
+                    </div>
+                    <div class='col-3 padding_2px'>
+                        <input type='number' name='C_birds' class='numEntry' value=0  min=0 max=5>
+                    </div>
+                    <div class='col-2 padding_2px'>
+                        <input type='button' name='plus' value='+' class='plus_minus' id='birds_plusC'><br>
+                        <input type='button' name='plus' value='-' class='plus_minus' id='birds_minusC'>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+            <div class='container'>
+                <div class='row  align-items-center' style='min-height:80px' >
+                    <div class='col-2 offset-3 padding_2px'>
+                        <input type='button' name='back' value='Back' title='I declared it as a submit button because I will like to save the changes made when the user wants to check a previous entry'>
+                    </div>
+                    <div class='col-2 offset-2 padding_2px'>
+                        <input type='button' name='next' value='Next' title='when going to the next data to record,     submit this entry before moving on to the next'>
+                    </div>
+                    
+                </div>
+            </div>
+                
+        </form>
+    </body>
+</html>

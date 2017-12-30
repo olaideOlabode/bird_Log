@@ -1,0 +1,54 @@
+.cage{
+    height:auto;
+    width:auto;
+}
+.numEntry{
+    vertical-align: middle;
+    text-align: center;
+    height:100%;
+    width:100%;
+    font-size:30px;
+    
+}
+
+
+.plus_minus{
+    height:50%;
+    width:100%;
+    text-align:center;
+    vertical-align:center;
+    
+}
+
+.padding_2px{
+    padding:2px;
+}
+
+
+form {
+    background-color:lightcyan;
+    margin:auto;
+    padding:4px;
+    border-radius:19px;
+    max-width:600px;
+    max-height:800px;
+    
+}
+body{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right:10px;
+}
+/*START:Removing Spinners on number input types*/
+/* For Firefox */
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+/* Webkit browsers like Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/*END:Removing Spinners on number input types*/

@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Production Layout</title>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!--<link rel="stylesheet" href="/Bootstrap4/conFusion/node_modules/bootstrap/dist/css/bootstrap.min.css">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" 
+              integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel='stylesheet' href='css/my_layout.css'>
+        
+        
+    </head>
+    <body onload="today()">
+        <header>
+        </header>
+        <div class='container ' style='background-color:cornsilk;max-width: 600px'>
+            <form action='#' method='post' enctype='text/plain' id='production_record'>
+                <h2 class='font-weight-bold text-center'>Production Record</h2>
+                <h3 class='font-weight-bold text-center'>Battery Cages</h3>
+                <div class='row  justify-content-center' >
+                    <div class='col-  left_panel' >
+                        <div class='row padding_10px' >
+                            Date:
+                        </div>
+                        <div class='row padding_10px' >
+                            House ID:
+                        </div>
+                        <div class='row padding_10px' >
+                            Column:
+                        </div>
+                    </div>
+                    <div class='col-  right_panel' >
+                        <div class='row padding_10px' >
+                            <input type='date' name='date' id='record_date'  required>
+                        </div>
+                        <div class='row r padding_10px' >
+                            <input type='text' value='A' name='houseID' disabled>
+                        </div>
+                        <div class='row padding_10px' >
+                            <input type='text' value='1' name='houseID' disabled>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='row padding_10px justify-content-center' >
+                    <div class='col- padding_10px left_panel' >
+                        <div class='row padding_10px font-weight-bold  justify-content-center align-items-center' >
+                            EGGS
+                        </div>
+                        <div class='row padding_10px' >
+                            <div class='col- padding_10px left_panel' >
+                                <div class='row padding_10px  justify-content-center' >
+                                    
+                                        <button type='button'  class="btn btn-md btn-success" onclick='plus1("eggs_A")'>+</button>
+                                    
+                                </div>
+                                <div class='row padding_10px  justify-content-center' >
+                                   
+                                        <button type='button' class="btn  btn-md btn-danger" onclick='minus1("eggs_A")'>-</button>
+                                    
+                                </div>
+                            </div>
+                            <div class='col padding_10px right_panel' >
+                                <input class='form-control' type='number' id='eggs_A' name='eggs_A' min=0 max=5>
+                            </div>
+                        </div>
+                        <div class='row padding_10px' >
+                            <div class='col- padding_10px  left_panel' >
+                                <div class='row padding_10px  justify-content-center'>
+                                    
+                                        <button type='button' class="btn btn-md btn-success">+</button>
+                                   
+                                </div>
+                                <div class='row padding_10px  justify-content-center' >
+                                    
+                                        <button type='button' class="btn  btn-md btn-danger">-</button>
+                                    
+                                </div>
+                            </div>
+                            <div class='col- padding_10px right_panel' >
+                                <input class='form-control' type='number' name='eggs_' min=0 max=5>
+                            </div>
+                        </div>
+                        <div class='row padding_10px'>
+                            <div class='col- padding_10px left_panel '>
+                                <div class='row padding_10px  justify-content-center'>
+                                    
+                                        <button type='button' class="btn btn-md btn-success">+</button>
+                                   
+                                </div>
+                                <div class='row padding_10px  justify-content-center'>
+                                    
+                                        <button type='button' class="btn  btn-md btn-danger">-</button>
+                                    
+                                </div>
+                            </div>
+                            <div class='col- padding_10px right_panel'>
+                                <input class='form-control' type='number' name='eggs_' min=0 max=5>
+                            </div>
+                        </div>
+                        <div class='row padding_10px justify-content-center align-items-center'>
+                            <button type='button' value='BACK' name='submit' class="btn  btn-md btn-primary" disabled><a href="my_layout_freerange.html" class='font-weight-bold' style="color:black;">BACK</a></button>
+                        </div>
+                    </div>
+                    <div class='col- padding_10px right_panel' >
+                        <div class='row padding_10px font-weight-bold justify-content-center align-items-center'>
+                            BIRDS
+                        </div>
+                        <div class='row padding_10px' >
+                            <div class='col- padding_10px left_panel flex-last' >
+                                <div class='row padding_10px  justify-content-center'>
+                                   
+                                        <button type='button' class="btn btn-md btn-success">+</button>
+                                    
+                                </div>
+                                <div class='row padding_10px  justify-content-center'>
+                                    
+                                        <button type='button' class="btn  btn-md btn-danger">-</button>
+                                    
+                                </div>
+                            </div>
+                            <div class='col- padding_10px right_panel'>
+                                <input class='form-control' type='number' name='eggs_' min=0 max=5>
+                            </div>
+                        </div>
+                        <div class='row padding_10px' >
+                            <div class='col- padding_10px left_panel flex-last' >
+                                <div class='row padding_10px  justify-content-center'>
+                                    
+                                        <button type='button' class="btn btn-md btn-success">+</button>
+                                   
+                                </div>
+                                <div class='row padding_10px  justify-content-center'>
+                                   
+                                        <button type='button' class="btn  btn-md btn-danger">-</button>
+                                    
+                                </div>
+                            </div>
+                            <div class='col- padding_10px right_panel'>
+                                <input class='form-control' type='number' name='eggs_' min=0 max=5>
+                            </div>
+                        </div>
+                        <div class='row padding_10px' >
+                            <div class='col- padding_10px left_panel flex-last' >
+                                <div class='row padding_10px  justify-content-center'>
+                                    
+                                        <button type='button' class="btn btn-md btn-success ">+</button>
+                                    
+                                </div>
+                                <div class='row padding_10px justify-content-center'>
+                                    
+                                        <button type='button' class="btn  btn-md btn-danger">-</button>
+                                    
+                                </div>
+                            </div>
+                            <div class='col padding_10px right_panel' >
+                                <input class='form-control' type='number' name='eggs_' min=0 max=5>
+                            </div>
+                        </div>
+                        <div class='row padding_10px justify-content-center align-items-center' >
+                            <button type='button' value='NEXT' name='submit' class="btn  btn-md btn-primary"><a href="my_layout_freerange.html" class='font-weight-bold' style="color:black;">NEXT</a></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        
+        <footer>
+        </footer>
+            <!-- jQuery first, then Tether, then Bootsrap JS. -->
+    <script src="/Bootstrap4/conFusion/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/Bootstrap4/conFusion/node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="/Bootstrap4/conFusion/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src='js/scripts.js'></script>
+    </body>
+</html>
